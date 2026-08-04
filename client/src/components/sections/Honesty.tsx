@@ -7,11 +7,10 @@
 import { SectionLabel } from "@/components/brand/SectionLabel";
 
 const OFFERS = [
-  "Every number on this page is published data or yours. I'll send the sources.",
-  "The guarantee is contractual, and defined before you sign.",
-  "Every appointment and its outcome is in your report. Audit me instead of trusting me.",
-  "The ad accounts are in your name and funded by you from day one.",
-  "Every lead lands in your own system as it arrives. You never have to ask me for your data.",
+  "The guarantee is written into the contract, and defined before you sign.",
+  "The ad accounts and every lead are in your name from day one — you own the pipeline, not me.",
+  "Every appointment and its outcome lands in your monthly report. You audit the number, not me.",
+  "Every figure on this page is published research — ask and I'll send you the studies.",
 ];
 
 export function Honesty() {
@@ -26,15 +25,15 @@ export function Honesty() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
           <div data-reveal>
             <SectionLabel index="09" onDark>
-              Full disclosure
+              The accountability
             </SectionLabel>
             <h2 className="h-section mt-5 text-white">
-              What I <span className="accent">can&rsquo;t show you</span> yet
+              You don&rsquo;t have to trust me &mdash;{" "}
+              <span className="accent">you get to audit me.</span>
             </h2>
-            <p className="mt-6 max-w-[30rem] text-[1.04rem] leading-[1.6] text-on-dark">
-              I don&rsquo;t have a lender case study. I could have written one
-              &mdash; plenty of agencies do, and you&rsquo;d have no way to check
-              it. Here&rsquo;s what I&rsquo;d rather hand you instead.
+            <p className="mt-6 max-w-[32rem] text-[1.04rem] leading-[1.6] text-on-dark">
+              I&rsquo;ve built this so you never have to take my word for anything.
+              Here&rsquo;s exactly how you hold me to it.
             </p>
           </div>
 
