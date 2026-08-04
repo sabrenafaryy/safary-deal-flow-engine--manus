@@ -4,6 +4,7 @@
  * on one click. RULE: never name the tech stack. Copy verbatim.
  */
 import { SectionLabel } from "@/components/brand/SectionLabel";
+import { CtaButton, CtaMicro } from "@/components/brand/CtaButton";
 import {
   Megaphone,
   MousePointerClick,
@@ -191,6 +192,17 @@ export function Included() {
               appointment and we report the funding.
             </p>
           </div>
+        </div>
+
+        <div
+          data-reveal
+          className="mt-10 flex flex-col items-center text-center"
+        >
+          <CtaButton position="post_guarantee" size="lg" />
+          <CtaMicro className="mt-4 max-w-[34rem]">
+            Thirty minutes. We&rsquo;ll map the guarantee to your book and run your
+            numbers.
+          </CtaMicro>
         </div>
       </div>
     </section>
