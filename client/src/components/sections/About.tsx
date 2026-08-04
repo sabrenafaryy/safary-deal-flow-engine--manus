@@ -36,13 +36,14 @@ export function About() {
               </p>
               <p>
                 Before this I spent eight years building technology products at
-                large companies. Then I went into investment real estate myself,
-                got my license and did the deals &mdash; and today I sit on the
-                board of the OKC Real Estate Investors Association, working with
-                lenders, investors and contractors every week. That combination is
-                the point: I&rsquo;m in the room with your borrowers, I have the
-                marketing to reach them, and the technical background to build the
-                system that delivers it.
+                large companies. Then I went into investment real estate myself
+                &mdash; got my license, did the deals, and joined the board of the
+                OKC Real Estate Investors Association, where I work with lenders,
+                investors and contractors every week. I&rsquo;ve run my own
+                marketing company for the last three years, so this is far from my
+                first campaign. That combination is the point: I&rsquo;m in the
+                room with your borrowers, I have the marketing to reach them, and
+                the technical background to build the system that delivers it.
               </p>
               <p>
                 I came to lending because it is one of the few industries where the

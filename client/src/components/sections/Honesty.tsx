@@ -58,13 +58,11 @@ export function Honesty() {
                 Three founding clients
               </span>
               <p className="mt-3 text-[1rem] leading-[1.6] text-white/92">
-                Three founding clients at a founding rate &mdash; well below what
-                this costs once the results are published &mdash; in exchange for
-                permission to publish them. You get the work at a price that
-                won&rsquo;t exist again. I get the case study.{" "}
-                <span className="font-bold text-white">
-                  The trade is explicit: the discount is payment for the data.
-                </span>
+                I&rsquo;m taking three founding clients, in exchange for permission
+                to publish the results &mdash; appointments booked, cost per funded
+                loan, what worked and what didn&rsquo;t. You get first access and a
+                partner with real skin in your outcome.{" "}
+                <span className="font-bold text-white">I get the case study.</span>
               </p>
             </div>
           </div>

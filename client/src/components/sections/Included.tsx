@@ -221,9 +221,9 @@ export function Included() {
               </div>
             </dl>
             <p className="mt-4 text-[0.94rem] leading-[1.5] font-semibold text-ink">
-              Your cost is $5,000/mo plus media &mdash; a single funded loan more
-              than covers it. On the call we run this with your real close rate and
-              deal size, not an industry average.
+              One funded loan more than covers the whole engagement. On the call we
+              run this with your real close rate and deal size, not an industry
+              average.
             </p>
           </div>
         </div>

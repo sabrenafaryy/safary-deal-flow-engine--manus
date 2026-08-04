@@ -28,7 +28,7 @@ const QA: [string, string][] = [
   ],
   [
     "Who pays for the ads?",
-    "You do, directly, from an account in your name. Media never runs through my account and it's never marked up. There's also no per-funded-loan fee — charging you on closings would give you a reason to under-report them, on the exact number this engagement is measured by.",
+    "You do, directly, from an account in your name. Media never runs through my account and it's never marked up. There's also no per-funded-loan fee — you pay the same whether you close two deals or ten.",
   ],
   [
     "Do you work with my competitors?",

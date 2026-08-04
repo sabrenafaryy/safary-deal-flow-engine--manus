@@ -12,7 +12,6 @@
  *   7    The solution ........................... Solution
  *   8    Process ................................ Process
  *   9    What's included ........................ Included
- *   9b   The investment (pricing) ............... Investment
  *   10   Why choose you ......................... Comparison
  *   11   Proof slot two — industry data ......... IndustryData
  *   12   CTA (position two) ..................... CtaBand
@@ -29,7 +28,6 @@ import { PainPoints } from "@/components/sections/PainPoints";
 import { Solution } from "@/components/sections/Solution";
 import { Process } from "@/components/sections/Process";
 import { Included } from "@/components/sections/Included";
-import { Investment } from "@/components/sections/Investment";
 import { Comparison } from "@/components/sections/Comparison";
 import { IndustryData } from "@/components/sections/IndustryData";
 import { CtaBand } from "@/components/sections/CtaBand";
@@ -54,7 +52,6 @@ export default function Home() {
         <Solution />
         <Process />
         <Included />
-        <Investment />
         <Comparison />
         <IndustryData />
         <CtaBand />
