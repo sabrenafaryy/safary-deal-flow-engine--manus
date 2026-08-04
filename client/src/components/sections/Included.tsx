@@ -1,23 +1,21 @@
 /**
- * SECTION 9 — What's Included: four labeled groups, then compliance, guarantee and math.
- * Hairline-separated rows, not cards — this is a spec sheet and should read like one.
- * RULE: never name the tech stack. No CRM or platform names appear here.
- * Copy verbatim.
+ * SECTION 9 — What's Included. Four pillars up top; the full 23-line build tucked behind a
+ * "See everything" dropdown; then the guarantee and the math. Scannable by default, complete
+ * on one click. RULE: never name the tech stack. Copy verbatim.
  */
 import { SectionLabel } from "@/components/brand/SectionLabel";
 import {
-  Check,
   Megaphone,
   MousePointerClick,
   Cog,
   BarChart3,
   ShieldCheck,
-  Scale,
 } from "lucide-react";
 
 type Group = {
   label: string;
   icon: React.ElementType;
+  summary: string;
   items: [string, string][];
 };
 
@@ -25,117 +23,52 @@ const GROUPS: Group[] = [
   {
     label: "The Ads",
     icon: Megaphone,
+    summary: "Investor-intent search, social & map — running only where you lend.",
     items: [
-      [
-        "Market-Matched Search Campaigns",
-        "Ads run only where you lend, split by loan product.",
-      ],
-      [
-        "Investor-Intent Keyword Architecture",
-        "We bid what investors search and block what homeowners search.",
-      ],
-      [
-        "25 Conversion-Tested Ads",
-        "Five hooks, five bodies, four angles that move investors.",
-      ],
-      [
-        "Retargeting That Stays on the Deal",
-        "We follow the 95% who don't convert on the first visit.",
-      ],
-      [
-        "Google Business Profile Optimization",
-        "Claimed, verified, fully built out: categories, services, markets, photos, Q&A and posts.",
-      ],
-      [
-        "Local Results Placement",
-        "Google shows three local businesses above the paid ads. Most lenders aren't one of them. We get you there and keep reviews coming in.",
-      ],
+      ["Market-Matched Search Campaigns", "Ads run only where you lend, split by loan product."],
+      ["Investor-Intent Keyword Architecture", "We bid what investors search and block what homeowners search."],
+      ["25 Conversion-Tested Ads", "Five hooks, five bodies, four angles that move investors."],
+      ["Retargeting That Stays on the Deal", "We follow the 95% who don't convert on the first visit."],
+      ["Google Business Profile Optimization", "Claimed, verified, fully built out: categories, services, markets, photos, Q&A and posts."],
+      ["Local Results Placement", "Google shows three local businesses above the paid ads. Most lenders aren't one of them. We get you there and keep reviews coming in."],
     ],
   },
   {
     label: "The Funnels",
     icon: MousePointerClick,
+    summary: "One page per loan product, built to make you the obvious call.",
     items: [
-      [
-        "Product-Specific Deal Pages",
-        "One page per loan type. Not your homepage.",
-      ],
-      [
-        "Short-Form Deal Capture",
-        "A few questions, one at a time, done in under a minute.",
-      ],
-      [
-        "Your Terms, Stated Plainly",
-        "Leverage, minimums, timelines. Published, not hidden behind a call.",
-      ],
-      [
-        "Recent Closings, Real Numbers",
-        "Your own funded deals doing the convincing.",
-      ],
-      [
-        "Instant Booking on the Thank-You Page",
-        "A calendar the second he submits, not an email later.",
-      ],
-      [
-        "Built for a Phone",
-        "He's standing in the property when he finds you.",
-      ],
-      [
-        "VSL & Ad Scripts",
-        "Written for your offer, not pulled from a template.",
-      ],
+      ["Product-Specific Deal Pages", "One page per loan type. Not your homepage."],
+      ["Short-Form Deal Capture", "A few questions, one at a time, done in under a minute."],
+      ["Your Terms, Stated Plainly", "Leverage, minimums, timelines. Published, not hidden behind a call."],
+      ["Recent Closings, Real Numbers", "Your own funded deals doing the convincing."],
+      ["Instant Booking on the Thank-You Page", "A calendar the second they submit, not an email later."],
+      ["Built for a Phone", "They're standing in the property when they find you."],
+      ["VSL & Ad Scripts", "Written for your offer, not pulled from a template."],
     ],
   },
   {
     label: "The Engine Behind It",
     icon: Cog,
+    summary: "5-minute response, qualification to your box, nurture & takeout.",
     items: [
-      [
-        "Five-Minute Response, Around the Clock",
-        "Every inquiry, every hour, automatically.",
-      ],
-      [
-        "Qualification Built to Your Box",
-        "Your criteria, not a template. We screen, you underwrite.",
-      ],
-      [
-        "Booking & No-Show Rescue",
-        "Confirmed, reminded, and rebooked if he misses.",
-      ],
-      [
-        "Database Reactivation",
-        "Your old borrowers, worked. They fund every three to six months.",
-      ],
-      [
-        "Seasoning & Takeout Campaigns",
-        "We're there with his refi number before anyone else is.",
-      ],
-      [
-        "Review Engine",
-        "Requests fire automatically at funding. More reviews, higher local ranking, cheaper leads.",
-      ],
+      ["Five-Minute Response, Around the Clock", "Every inquiry, every hour, automatically."],
+      ["Qualification Built to Your Box", "Your criteria, not a template. We screen, you underwrite."],
+      ["Booking & No-Show Rescue", "Confirmed, reminded, and rebooked if they miss."],
+      ["Database Reactivation", "Your old borrowers, worked. They fund every three to six months."],
+      ["Seasoning & Takeout Campaigns", "We're there with their refi number before anyone else is."],
+      ["Review Engine", "Requests fire automatically at funding. More reviews, higher local ranking, cheaper leads."],
     ],
   },
   {
     label: "The Reporting",
     icon: BarChart3,
+    summary: "Cost per funded loan, every appointment logged, all in your CRM.",
     items: [
-      [
-        "Cost Per Funded Loan",
-        "Spend traced to closing, by campaign and keyword.",
-      ],
-      [
-        "Every Appointment, Every Outcome",
-        "The full log, monthly. Audit the guarantee yourself.",
-      ],
-      [
-        "Everything Lands In Your System",
-        "Leads flow into your CRM as they come in. You're never waiting on us for your own data.",
-      ],
-      [
-        "You Own All Of It",
-        "Ad accounts in your name, funded by you. Full export any time, written into the agreement.",
-      ],
+      ["Cost Per Funded Loan", "Spend traced to closing, by campaign and keyword."],
+      ["Every Appointment, Every Outcome", "The full log, monthly. Audit the guarantee yourself."],
+      ["Everything Lands In Your System", "Leads flow into your CRM as they come in. You're never waiting on us for your own data."],
+      ["You Own All Of It", "Ad accounts in your name, funded by you. Full export any time, written into the agreement."],
     ],
   },
 ];
@@ -151,98 +84,79 @@ export function Included() {
           </h2>
         </div>
 
-        {/* four scope groups — read as a term sheet: category · deliverable · explanation */}
-        <div className="mt-16 space-y-14">
+        {/* four pillars */}
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {GROUPS.map((g, gi) => (
-            <section
+            <div
               key={g.label}
               data-reveal
               style={{ "--reveal-delay": `${gi * 50}ms` } as React.CSSProperties}
-              className="grid gap-y-6 lg:grid-cols-[15rem_minmax(0,1fr)] lg:gap-x-14"
+              className="rounded-2xl border border-hairline bg-paper p-6"
             >
-              {/* category — a standing header column, term-sheet style */}
-              <header className="lg:sticky lg:top-28 lg:self-start">
-                <div className="flex items-baseline gap-3 border-t-2 border-brand pt-4">
-                  <span className="numeral text-[2.1rem] text-brand">
-                    {String(gi + 1).padStart(2, "0")}
-                  </span>
-                  <g.icon
-                    className="mb-1 size-[1.15rem] shrink-0 self-end text-brand/60"
-                    strokeWidth={2}
-                  />
-                </div>
-                <h3 className="mt-3 text-[1.22rem] leading-[1.15] font-extrabold tracking-[-0.025em] text-ink">
-                  {g.label}
-                </h3>
-                <p className="mono-label mt-2 text-muted-ink">
-                  {String(g.items.length).padStart(2, "0")} line items
-                </p>
-              </header>
-
-              {/* deliverables — hairline rows, name and explanation on separate levels */}
-              <ul className="divide-y divide-hairline border-t border-hairline">
-                {g.items.map(([title, desc]) => (
-                  <li
-                    key={title}
-                    className="group grid gap-x-8 gap-y-1.5 py-4 transition-colors duration-200 hover:bg-paper sm:grid-cols-[minmax(0,17rem)_minmax(0,1fr)] sm:py-4.5"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="mt-[0.3rem] flex size-[1.05rem] shrink-0 items-center justify-center rounded-full bg-brand/10 transition-colors duration-200 group-hover:bg-brand">
-                        <Check
-                          className="size-[0.6rem] text-brand transition-colors duration-200 group-hover:text-white"
-                          strokeWidth={3.4}
-                        />
-                      </span>
-                      <span className="text-[0.98rem] leading-[1.42] font-bold tracking-[-0.012em] text-ink">
-                        {title}
-                      </span>
-                    </div>
-                    <span className="pl-[2.05rem] text-[0.96rem] leading-[1.55] text-muted-ink sm:pl-0">
-                      {desc}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </section>
+              <span className="flex size-11 items-center justify-center rounded-xl bg-brand/10 text-brand">
+                <g.icon className="size-[1.35rem]" strokeWidth={2} />
+              </span>
+              <h3 className="mt-4 text-[1.08rem] font-extrabold tracking-[-0.015em] text-ink">
+                {g.label}
+              </h3>
+              <p className="mt-2 text-[0.94rem] leading-[1.5] text-muted-ink">
+                {g.summary}
+              </p>
+            </div>
           ))}
         </div>
 
-        {/* compliance + guarantee + math */}
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
-          <div
-            data-reveal
-            className="rounded-2xl border border-hairline bg-paper p-7"
-          >
-            <Scale className="size-5 text-brand" strokeWidth={2} />
-            <h3 className="mt-4 text-[1.05rem] font-extrabold tracking-[-0.015em] text-ink">
-              Built for a Regulated Business
-            </h3>
-            <p className="mt-3 text-[0.96rem] leading-[1.58] text-muted-ink">
-              Business purpose only. Geo-fenced to your licensed markets. NMLS
-              where required. Consent on every form, registered messaging
-              throughout. No invented reviews or results &mdash; ever.
-            </p>
+        {/* the full build — tucked behind one dropdown */}
+        <details
+          data-reveal
+          className="group mt-4 overflow-hidden rounded-2xl border border-hairline bg-white"
+        >
+          <summary className="flex cursor-pointer list-none items-center justify-between px-6 py-5 text-[1rem] font-bold text-ink [&::-webkit-details-marker]:hidden">
+            <span>The full build &mdash; 23 deliverables, all included</span>
+            <span className="mono-label flex items-center gap-1.5 text-brand">
+              See everything
+              <span className="group-open:hidden">+</span>
+              <span className="hidden group-open:inline">&minus;</span>
+            </span>
+          </summary>
+          <div className="space-y-10 border-t border-hairline px-6 py-8">
+            {GROUPS.map((g) => (
+              <div key={g.label}>
+                <h4 className="mono-label mb-3.5 border-b border-hairline pb-2.5 text-brand">
+                  {g.label}
+                </h4>
+                <ul className="grid gap-x-10 gap-y-3.5 sm:grid-cols-2">
+                  {g.items.map(([title, desc]) => (
+                    <li
+                      key={title}
+                      className="text-[0.93rem] leading-[1.5] text-muted-ink"
+                    >
+                      <strong className="font-bold text-ink">{title}</strong>{" "}
+                      &mdash; {desc}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
+        </details>
 
+        {/* guarantee + math */}
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <div
             data-reveal
-            style={{ "--reveal-delay": "70ms" } as React.CSSProperties}
             className="rounded-2xl border-2 border-brand/45 bg-brand/6 p-7"
           >
             <ShieldCheck className="size-5 text-brand" strokeWidth={2} />
             <h3 className="mt-4 text-[1.05rem] font-extrabold tracking-[-0.015em] text-ink">
               The Guarantee
             </h3>
-            {/* numerals as editorial graphics */}
             <div className="mt-4 flex items-end gap-6 border-y border-brand/25 py-4">
               <div>
                 <p className="numeral text-[3.1rem] text-brand">6</p>
                 <p className="mono-label mt-1 text-muted-ink">every month</p>
               </div>
-              <span
-                aria-hidden="true"
-                className="mb-6 h-8 w-px bg-brand/25"
-              />
+              <span aria-hidden="true" className="mb-6 h-8 w-px bg-brand/25" />
               <div>
                 <p className="numeral text-[3.1rem] text-ink">M2</p>
                 <p className="mono-label mt-1 text-muted-ink">guarantee begins</p>
@@ -280,7 +194,7 @@ export function Included() {
 
           <div
             data-reveal
-            style={{ "--reveal-delay": "140ms" } as React.CSSProperties}
+            style={{ "--reveal-delay": "70ms" } as React.CSSProperties}
             className="rounded-2xl border border-hairline bg-paper p-7"
           >
             <span className="mono-label text-brand">The Math</span>
@@ -293,17 +207,13 @@ export function Included() {
             </p>
             <dl className="mt-4 space-y-3 border-t border-hairline pt-4">
               <div>
-                <dt className="text-[0.94rem] font-bold text-ink">
-                  If you fund it
-                </dt>
+                <dt className="text-[0.94rem] font-bold text-ink">If you fund it</dt>
                 <dd className="text-[0.94rem] leading-[1.5] text-muted-ink">
                   $12,000 to $20,000 per deal on a $400K bridge.
                 </dd>
               </div>
               <div>
-                <dt className="text-[0.94rem] font-bold text-ink">
-                  If you place it
-                </dt>
+                <dt className="text-[0.94rem] font-bold text-ink">If you place it</dt>
                 <dd className="text-[0.94rem] leading-[1.5] text-muted-ink">
                   One to two points at close &mdash; so it turns on your average
                   deal size.

@@ -8,20 +8,12 @@
 import { Eyebrow } from "@/components/brand/Eyebrow";
 import { ShieldCheck } from "lucide-react";
 
-const HERO_TEXTURE = "/manus-storage/hero-texture_f5acfd11.png";
-
 export function Hero() {
   return (
     <section
       id="top"
       className="grain relative overflow-hidden bg-ink pt-[104px] pb-16 sm:pt-[128px] sm:pb-24"
     >
-      {/* texture layer — kept quiet on the left where the headline sits */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-cover bg-center opacity-55"
-        style={{ backgroundImage: `url('${HERO_TEXTURE}')` }}
-      />
       <div
         aria-hidden="true"
         className="grid-field pointer-events-none absolute inset-0 opacity-70"

@@ -1,10 +1,12 @@
 /**
  * SECTION 3+4 — VSL and the first CTA (large, directly under the player).
- * Per spec: the three qualifying questions are rendered as real text, never a
- * "coming soon" box. A real player drops into the same frame when the video exists.
+ * A real 16:9 video placeholder (poster + play button) sits where the walkthrough goes;
+ * the three qualifying questions stay as supporting text. Swap the placeholder for the
+ * embed when the video exists.
  */
 import { CtaButton, CtaMicro } from "@/components/brand/CtaButton";
 import { SectionLabel } from "@/components/brand/SectionLabel";
+import { Play } from "lucide-react";
 
 const QUESTIONS = [
   "Are you funding fewer deals than your pipeline should be producing?",
@@ -24,38 +26,33 @@ export function Vsl() {
             </h2>
           </div>
 
-          {/* the three questions, set as the page's most emphatic reading moment */}
+          {/* VSL placeholder — replace with the real embed (Wistia / YouTube / Vimeo) when ready */}
           <div
             data-reveal
             style={{ "--reveal-delay": "90ms" } as React.CSSProperties}
-            className="mt-10 overflow-hidden rounded-2xl border border-hairline bg-white shadow-[0_2px_4px_rgba(15,23,41,0.04)]"
+            className="relative mt-10 flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl border border-on-dark-line bg-ink shadow-[0_24px_60px_rgba(15,23,41,0.22)]"
           >
-            <ol className="divide-y divide-hairline">
-              {QUESTIONS.map((q, i) => (
-                <li
-                  key={q}
-                  className="group flex items-start gap-5 px-6 py-6 transition-colors duration-200 hover:bg-paper sm:px-9 sm:py-7"
-                >
-                  <span className="numeral mono-label mt-1.5 shrink-0 text-brand">
-                    0{i + 1}
-                  </span>
-                  <p
-                    className={`text-[1.1rem] leading-[1.42] font-bold tracking-[-0.015em] sm:text-[1.28rem] ${
-                      i === QUESTIONS.length - 1 ? "text-brand" : "text-ink"
-                    }`}
-                  >
-                    {q}
-                  </p>
-                </li>
-              ))}
-            </ol>
+            <div
+              aria-hidden="true"
+              className="grid-field pointer-events-none absolute inset-0 opacity-50"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ink via-ink-2 to-ink opacity-80"
+            />
+            <span className="relative flex size-20 items-center justify-center rounded-full bg-brand shadow-[0_10px_34px_rgba(13,129,211,0.5)]">
+              <Play className="ml-1 size-8 fill-white text-white" />
+            </span>
+            <span className="mono-label absolute bottom-4 left-5 text-on-dark-muted">
+              2-minute walkthrough
+            </span>
           </div>
 
           {/* CTA — formula position one */}
           <div
             data-reveal
             style={{ "--reveal-delay": "160ms" } as React.CSSProperties}
-            className="mt-11 flex flex-col items-center text-center"
+            className="mt-9 flex flex-col items-center text-center"
           >
             <CtaButton position="post_vsl" size="lg" />
             <CtaMicro className="mt-4 max-w-[30rem]">
@@ -63,6 +60,27 @@ export function Vsl() {
               on the call.
             </CtaMicro>
           </div>
+
+          {/* supporting questions */}
+          <ul
+            data-reveal
+            style={{ "--reveal-delay": "220ms" } as React.CSSProperties}
+            className="mx-auto mt-11 flex max-w-[40rem] flex-col gap-3"
+          >
+            {QUESTIONS.map((q, i) => (
+              <li
+                key={q}
+                className={`relative pl-6 text-[0.98rem] leading-[1.45] ${
+                  i === QUESTIONS.length - 1
+                    ? "font-semibold text-brand"
+                    : "text-muted-ink"
+                }`}
+              >
+                <span className="absolute top-[0.55rem] left-0 size-2 rounded-full bg-brand" />
+                {q}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

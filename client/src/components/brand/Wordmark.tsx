@@ -8,8 +8,6 @@
  */
 import { cn } from "@/lib/utils";
 
-const MARK_SRC = "/manus-storage/safary-mark_4d986ce9.png";
-
 export function Wordmark({
   onDark = false,
   size = "md",
@@ -34,12 +32,23 @@ export function Wordmark({
             : "bg-ink shadow-[0_3px_10px_rgba(15,23,41,0.18)]",
         )}
       >
-        <img
-          src={MARK_SRC}
-          alt=""
+        <svg
+          viewBox="0 0 24 24"
           aria-hidden="true"
-          className={cn(glyph, "object-contain")}
-        />
+          className={cn(glyph, onDark ? "text-brand-light" : "text-brand")}
+        >
+          <text
+            x="12"
+            y="17.5"
+            textAnchor="middle"
+            fontFamily="Inter, sans-serif"
+            fontSize="17"
+            fontWeight="800"
+            fill="currentColor"
+          >
+            S
+          </text>
+        </svg>
       </span>
 
       <span className="flex flex-col">

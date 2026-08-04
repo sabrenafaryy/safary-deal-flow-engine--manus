@@ -8,7 +8,7 @@ import { Plus } from "lucide-react";
 const QA: [string, string][] = [
   [
     "How is this different from a lead vendor?",
-    "They sell you a contact record, often the same one they sold three other lenders. We generate the borrower, qualify him, and book him — with the property, the price, the ARV and the close date already captured.",
+    "They sell you a contact record, often the same one they sold three other lenders. We generate the borrower, qualify them, and book them — with the property, the price, the ARV and the close date already captured.",
   ],
   [
     "What happens to my pipeline if I stop?",
