@@ -141,8 +141,8 @@ export function Included() {
           </div>
         </details>
 
-        {/* guarantee + math */}
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        {/* guarantee */}
+        <div className="mt-12">
           <div
             data-reveal
             className="rounded-2xl border-2 border-brand/45 bg-brand/6 p-7"
@@ -189,41 +189,6 @@ export function Included() {
               We don&rsquo;t guarantee funded loans. We don&rsquo;t control your
               underwriting, your pricing or your capital. We guarantee the
               appointment and we report the funding.
-            </p>
-          </div>
-
-          <div
-            data-reveal
-            style={{ "--reveal-delay": "70ms" } as React.CSSProperties}
-            className="rounded-2xl border border-hairline bg-paper p-7"
-          >
-            <span className="mono-label text-brand">The Math</span>
-            <p className="numeral mt-3 text-[2.6rem] text-ink">
-              6<span className="text-[1rem] font-bold text-muted-ink"> a month</span>
-            </p>
-            <p className="mt-2 text-[0.96rem] leading-[1.58] text-muted-ink">
-              qualified appointments. Close a third of them and that&rsquo;s about
-              two funded loans.
-            </p>
-            <dl className="mt-4 space-y-3 border-t border-hairline pt-4">
-              <div>
-                <dt className="text-[0.94rem] font-bold text-ink">If you fund it</dt>
-                <dd className="text-[0.94rem] leading-[1.5] text-muted-ink">
-                  $12,000 to $20,000 per deal on a $400K bridge.
-                </dd>
-              </div>
-              <div>
-                <dt className="text-[0.94rem] font-bold text-ink">If you place it</dt>
-                <dd className="text-[0.94rem] leading-[1.5] text-muted-ink">
-                  One to two points at close &mdash; so it turns on your average
-                  deal size.
-                </dd>
-              </div>
-            </dl>
-            <p className="mt-4 text-[0.94rem] leading-[1.5] font-semibold text-ink">
-              One funded loan more than covers the whole engagement. On the call we
-              run this with your real close rate and deal size, not an industry
-              average.
             </p>
           </div>
         </div>
