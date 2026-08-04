@@ -18,7 +18,7 @@ export function Footer() {
 
           <div className="text-[0.88rem] leading-[1.7] text-[#7B8A99] md:text-right">
             <p className="font-semibold text-white/85">Safary Marketing</p>
-            <p>Houston, Texas</p>
+            <p>Oklahoma City, Oklahoma</p>
             <p className="mt-2">
               <a
                 href="#book"

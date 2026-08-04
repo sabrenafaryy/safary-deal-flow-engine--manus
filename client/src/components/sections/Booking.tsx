@@ -5,11 +5,19 @@
  * Tracking: form_start fires on first interaction, form_submit on submit,
  * booking_complete once the calendar confirms.
  *
- * CALENDAR: the spec requires a live embedded calendar, not a form and not a placeholder.
- * This is a static build with no backend, so the flow is: qualify with the 8 fields, then
- * hand off to the live calendar. Set VITE_CALENDLY_URL (or edit CALENDAR_URL below) to the
- * real Calendly link and the embed goes live — answers are passed through as prefill so
- * nothing is asked twice.
+ * CALENDAR: the flow is step-one qualify (the 8 fields), then hand off to the live
+ * GoHighLevel calendar. Set the two values below (or their env vars) to go live:
+ *
+ *   GHL_CALENDAR_URL  — your GHL calendar embed link. In GHL: Calendars → the calendar →
+ *                       Share → copy the booking widget URL. It looks like
+ *                       https://api.leadconnectorhq.com/widget/booking/XXXXXXXX
+ *                       (or a link.<yourdomain> equivalent). Name/email/phone are passed
+ *                       through as prefill so those aren't asked twice.
+ *
+ *   GHL_WEBHOOK_URL   — (optional but recommended) a GHL Inbound Webhook trigger URL. On
+ *                       submit we POST all 8 answers to it so the full qualification lands
+ *                       in GHL as a contact, not just the three fields the calendar prefills.
+ *                       In GHL: Automation → Workflows → Add trigger → "Inbound Webhook".
  */
 import { useEffect, useRef, useState } from "react";
 import { track } from "@/lib/track";
@@ -17,8 +25,11 @@ import { SectionLabel } from "@/components/brand/SectionLabel";
 import { ArrowRight, CalendarCheck, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const CALENDAR_URL: string =
-  (import.meta.env.VITE_CALENDLY_URL as string | undefined) ?? "";
+const GHL_CALENDAR_URL: string =
+  (import.meta.env.VITE_GHL_CALENDAR_URL as string | undefined) ?? "";
+
+const GHL_WEBHOOK_URL: string =
+  (import.meta.env.VITE_GHL_WEBHOOK_URL as string | undefined) ?? "";
 
 type FormState = {
   name: string;
@@ -62,6 +73,32 @@ export function Booking() {
       funding_model: form.model,
       marketing_spend: form.spend,
     });
+
+    // Send the full qualification to GHL so nothing is lost on the handoff.
+    // Fire-and-forget — the calendar shows immediately either way.
+    if (GHL_WEBHOOK_URL) {
+      const [first, ...rest] = form.name.trim().split(/\s+/);
+      void fetch(GHL_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          first_name: first ?? "",
+          last_name: rest.join(" "),
+          full_name: form.name,
+          company: form.company,
+          email: form.email,
+          phone: form.phone,
+          loans_per_month: form.loans,
+          lending_markets: form.markets,
+          funding_model: form.model,
+          monthly_marketing_spend: form.spend,
+          source: "Deal Flow Engine — landing page",
+        }),
+      }).catch(() => {
+        /* never block the calendar on a webhook hiccup */
+      });
+    }
+
     setSubmitted(true);
   };
 
@@ -219,17 +256,19 @@ export function Booking() {
 
 function Calendar({ form }: { form: FormState }) {
   useEffect(() => {
-    if (!CALENDAR_URL) return;
+    if (!GHL_CALENDAR_URL) return;
+    // GHL's embed script auto-sizes the iframe to the calendar's content.
     const s = document.createElement("script");
-    s.src = "https://assets.calendly.com/assets/external/widget.js";
+    s.src = "https://link.msgsndr.com/js/form_embed.js";
     s.async = true;
     document.body.appendChild(s);
 
+    // Best-effort completion tracking (GHL posts a message on booking).
     const onMessage = (e: MessageEvent) => {
-      if (
-        typeof e.data?.event === "string" &&
-        e.data.event === "calendly.event_scheduled"
-      ) {
+      const data = e.data;
+      const evt =
+        typeof data === "string" ? data : (data?.type ?? data?.event ?? "");
+      if (typeof evt === "string" && /appointment|booking/i.test(evt)) {
         track("booking_complete");
       }
     };
@@ -237,9 +276,15 @@ function Calendar({ form }: { form: FormState }) {
     return () => window.removeEventListener("message", onMessage);
   }, []);
 
-  const src = CALENDAR_URL
-    ? `${CALENDAR_URL}?hide_gdpr_banner=1&primary_color=0d81d3` +
-      `&name=${encodeURIComponent(form.name)}&email=${encodeURIComponent(form.email)}`
+  const [first, ...rest] = form.name.trim().split(/\s+/);
+  const params = new URLSearchParams({
+    first_name: first ?? "",
+    last_name: rest.join(" "),
+    email: form.email,
+    phone: form.phone,
+  });
+  const src = GHL_CALENDAR_URL
+    ? `${GHL_CALENDAR_URL}${GHL_CALENDAR_URL.includes("?") ? "&" : "?"}${params}`
     : "";
 
   return (
@@ -256,17 +301,19 @@ function Calendar({ form }: { form: FormState }) {
         </div>
       </div>
 
-      {CALENDAR_URL ? (
-        <div
-          className="calendly-inline-widget mt-5 overflow-hidden rounded-xl"
-          data-url={src}
-          style={{ minWidth: 280, height: 640 }}
+      {GHL_CALENDAR_URL ? (
+        <iframe
+          title="Book your call"
+          src={src}
+          className="mt-5 w-full overflow-hidden rounded-xl bg-white"
+          style={{ minWidth: 280, height: 700, border: "none" }}
+          scrolling="no"
         />
       ) : (
         <div className="mt-5 rounded-xl border border-dashed border-on-dark-line bg-white/3 px-6 py-12 text-center">
           <p className="mono-label text-brand-light">Calendar not yet connected</p>
           <p className="mx-auto mt-3 max-w-[26rem] text-[0.92rem] leading-[1.6] text-on-dark-muted">
-            Add the live Calendly link as <code>VITE_CALENDLY_URL</code> and the
+            Add your GHL calendar link as <code>VITE_GHL_CALENDAR_URL</code> and the
             embedded calendar replaces this panel. Until then, these eight answers
             are captured on submit.
           </p>
