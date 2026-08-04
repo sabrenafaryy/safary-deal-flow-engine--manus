@@ -16,30 +16,29 @@ type Stat = {
 
 const STATS: Stat[] = [
   {
-    value: "6",
-    unit: "hrs",
-    label: "Average time for a lender to respond to a web inquiry",
-    source: "Source: to be confirmed before launch",
+    value: "83",
+    unit: "%",
+    label: "of private lenders made loans to fewer than 10 borrowers in four years",
+    source: "Forecasa, via Urban Institute · Apr 2026",
   },
   {
-    value: "50",
+    value: "26",
     unit: "%",
     label:
-      "Share of borrowers who transact with the first lender that responds",
-    source: "Source: to be confirmed before launch",
+      "of casual borrowers — 91% of the market — were still active a year later",
+    source: "Urban Institute · Apr 2026",
   },
   {
-    value: "40",
+    value: "60",
     unit: "%",
-    label:
-      "Share of bridge borrowers who refinance into a rental loan within 12 months",
-    source: "Source: to be confirmed before launch",
+    label: "of lenders never returned a phone call within 24 hours",
+    source: "130-lender speed-to-lead study, NMP",
   },
   {
-    value: "5",
-    unit: "min",
-    label: "Our response time to every inquiry, at any hour",
-    source: "Contractual, and reported monthly",
+    value: "306",
+    unit: "bps",
+    label: "DSCR spread over the 10-year — down from 424 a year earlier",
+    source: "Lightning Docs / AAPL · Apr 2025",
   },
 ];
 
@@ -98,8 +97,10 @@ export function IndustryData() {
           data-reveal
           className="mt-5 max-w-[52rem] text-[0.95rem] leading-[1.6] text-muted-ink"
         >
-          Every figure is published data and the source is named.{" "}
-          <span className="font-semibold text-ink">Ask me for any of them.</span>
+          Every figure is published research and the source is named.{" "}
+          <span className="font-semibold text-ink">
+            Ask me and I&rsquo;ll send you the studies.
+          </span>
         </p>
       </div>
     </section>
