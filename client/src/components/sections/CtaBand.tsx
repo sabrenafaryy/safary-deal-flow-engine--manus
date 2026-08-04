@@ -24,7 +24,7 @@ export function CtaBand() {
             {/* the offer restated as numerals — the page's conversion arithmetic */}
             <div className="flex flex-wrap items-end gap-x-8 gap-y-4 border-b border-white/12 pb-6">
               {[
-                ["6+", "appointments a month"],
+                ["5+", "appointments a month"],
                 ["5", "minute response"],
                 ["$0", "markup on media"],
               ].map(([n, l]) => (

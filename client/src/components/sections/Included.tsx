@@ -142,6 +142,24 @@ export function Included() {
           </div>
         </details>
 
+        {/* what this runs on — the media requirement, framed as a qualifier */}
+        <div
+          data-reveal
+          className="mt-4 rounded-2xl border border-hairline bg-paper p-7 sm:p-8"
+        >
+          <span className="mono-label text-brand">What this runs on</span>
+          <p className="mt-3 text-[1.15rem] font-extrabold tracking-[-0.015em] text-ink">
+            Media: $5,000/month minimum, in your accounts, never marked up.
+          </p>
+          <p className="mt-3 max-w-[70ch] text-[0.98rem] leading-[1.62] text-muted-ink">
+            Search catches the investor who&rsquo;s already looking. Social reaches
+            the one who&rsquo;ll be looking in six weeks. Retargeting brings back
+            the ones who came and left &mdash; which is most of them.{" "}
+            <span className="font-semibold text-ink">$5,000 runs all three.</span>{" "}
+            Less than that funds one and leaks the other two.
+          </p>
+        </div>
+
         {/* guarantee */}
         <div className="mt-12">
           <div
@@ -154,7 +172,7 @@ export function Included() {
             </h3>
             <div className="mt-4 flex items-end gap-6 border-y border-brand/25 py-4">
               <div>
-                <p className="numeral text-[3.1rem] text-brand">6</p>
+                <p className="numeral text-[3.1rem] text-brand">5</p>
                 <p className="mono-label mt-1 text-muted-ink">every month</p>
               </div>
               <span aria-hidden="true" className="mb-6 h-8 w-px bg-brand/25" />
@@ -164,12 +182,12 @@ export function Included() {
               </div>
             </div>
             <p className="mt-4 text-[0.96rem] leading-[1.58] text-muted-ink">
-              Six pre-qualified appointments every month, starting month two.
+              Five pre-qualified appointments every month, starting month two.
               Month one is build and ramp.{" "}
               <strong className="font-bold text-ink">
                 Miss a month after that and we work that month free.
               </strong>{" "}
-              After month six it becomes a performance standard &mdash; miss six
+              After month six it becomes a performance standard &mdash; miss five
               in a month and you can cancel with 30 days&rsquo; notice.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">

@@ -31,6 +31,10 @@ const QA: [string, string][] = [
     "You do, directly, from an account in your name. Media never runs through my account and it's never marked up. There's also no per-funded-loan fee — you pay the same whether you close two deals or ten.",
   ],
   [
+    "Is there a setup fee?",
+    "Yes — $1,500, one time, covering the full build: campaigns, funnel pages, response system, tracking and compliance. It's refunded in full if we part ways after two consecutive missed months.",
+  ],
+  [
     "Do you work with my competitors?",
     "Not in your market, for your product. Territory is agreed before signing.",
   ],

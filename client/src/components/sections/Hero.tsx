@@ -38,7 +38,7 @@ export function Hero() {
               style={{ "--reveal-delay": "70ms" } as React.CSSProperties}
               className="h-display mt-7 text-[clamp(2.1rem,5.4vw,3.75rem)] text-white"
             >
-              6+ pre-qualified investor appointments a month, booked with the deal details attached.{" "}
+              5+ pre-qualified investor appointments a month, booked with the deal details attached.{" "}
               <span className="accent">Or we work that month free.</span>
             </h1>
 
@@ -63,7 +63,7 @@ export function Hero() {
                 strokeWidth={2}
               />
               <p className="text-[0.95rem] leading-[1.5] font-medium text-[#DCEBFA]">
-                Six qualified appointments every month, starting month two.{" "}
+                Five qualified appointments every month, starting month two.{" "}
                 <strong className="font-extrabold text-brand">
                   Miss a month, we work that month free.
                 </strong>

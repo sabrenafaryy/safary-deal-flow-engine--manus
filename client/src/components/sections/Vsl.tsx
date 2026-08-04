@@ -11,7 +11,7 @@ import { Play } from "lucide-react";
 const QUESTIONS = [
   "Are you funding fewer deals than your pipeline should be producing?",
   "Do inquiries come in and go quiet before anyone calls them back?",
-  "Would you take six pre-qualified investor appointments a month, guaranteed?",
+  "Would you take five pre-qualified investor appointments a month, guaranteed?",
 ];
 
 export function Vsl() {
