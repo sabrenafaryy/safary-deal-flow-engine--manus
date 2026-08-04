@@ -1,13 +1,8 @@
 /**
- * SECTION 14 — About Us. First person, headshot alongside.
- * NOTE FOR THE CLIENT: the guide states Sabrena writes this copy herself ("it has to sound
- * like her"). The paragraphs below are structural placeholders following the guide's brief
- * (who I am / why lending / what I've built / what I'm betting) and MUST be replaced with
- * her own words before launch. The headshot is a placeholder frame, not a stock photo —
- * substituting a stock person would misrepresent the founder.
+ * SECTION 14 — About Us. First person, headshot alongside. Copy is Sabrena's own.
+ * The headshot frame is a placeholder until the real photo is dropped in.
  */
 import { SectionLabel } from "@/components/brand/SectionLabel";
-import { User } from "lucide-react";
 
 export function About() {
   return (
@@ -15,14 +10,11 @@ export function About() {
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
           <div data-reveal className="shrink-0">
-            <div className="flex aspect-square w-[150px] flex-col items-center justify-center gap-2.5 rounded-2xl border border-hairline bg-white text-center lg:w-[220px]">
-              <User className="size-7 text-muted-ink/50" strokeWidth={1.6} />
-              <span className="mono-label px-4 text-[0.62rem] leading-[1.5] text-muted-ink normal-case">
-                Headshot
-                <br />
-                to be added
-              </span>
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}founder.jpg`}
+              alt="Sabrena Fary, founder of Safary Marketing"
+              className="aspect-square w-[150px] rounded-2xl border border-hairline object-cover shadow-[0_10px_30px_rgba(15,23,41,0.12)] lg:w-[220px]"
+            />
           </div>
 
           <div
@@ -43,6 +35,16 @@ export function About() {
                 under contract looks nothing like a consumer shopping a mortgage.
               </p>
               <p>
+                Before this I spent eight years building technology products at
+                large companies. Then I went into investment real estate myself,
+                got my license and did the deals &mdash; and today I sit on the
+                board of the OKC Real Estate Investors Association, working with
+                lenders, investors and contractors every week. That combination is
+                the point: I&rsquo;m in the room with your borrowers, I have the
+                marketing to reach them, and the technical background to build the
+                system that delivers it.
+              </p>
+              <p>
                 I came to lending because it is one of the few industries where the
                 marketing can be held to a number that actually matters. Not
                 impressions. Not clicks. Appointments with borrowers who have an
@@ -56,11 +58,6 @@ export function About() {
                 and let you audit me instead of trust me.
               </p>
             </div>
-
-            <p className="mono-label mt-7 rounded-lg border border-hairline bg-white px-4 py-3 text-[0.64rem] leading-[1.6] text-muted-ink normal-case">
-              Placeholder copy following the brief &mdash; to be replaced with
-              Sabrena&rsquo;s own words before launch.
-            </p>
           </div>
         </div>
       </div>

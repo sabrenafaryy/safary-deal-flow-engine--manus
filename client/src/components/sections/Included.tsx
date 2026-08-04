@@ -202,8 +202,8 @@ export function Included() {
               6<span className="text-[1rem] font-bold text-muted-ink"> a month</span>
             </p>
             <p className="mt-2 text-[0.96rem] leading-[1.58] text-muted-ink">
-              qualified appointments. At your close rate, that&rsquo;s your funded
-              deals.
+              qualified appointments. Close a third of them and that&rsquo;s about
+              two funded loans.
             </p>
             <dl className="mt-4 space-y-3 border-t border-hairline pt-4">
               <div>
@@ -221,8 +221,9 @@ export function Included() {
               </div>
             </dl>
             <p className="mt-4 text-[0.94rem] leading-[1.5] font-semibold text-ink">
-              Monthly cost is $5,000 plus your media. On the call we run this with
-              your close rate and your deal size &mdash; not an industry average.
+              Your cost is $5,000/mo plus media &mdash; a single funded loan more
+              than covers it. On the call we run this with your real close rate and
+              deal size, not an industry average.
             </p>
           </div>
         </div>

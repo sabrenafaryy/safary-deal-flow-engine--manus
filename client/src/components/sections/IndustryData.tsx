@@ -87,7 +87,16 @@ export function IndustryData() {
 
         <p
           data-reveal
-          className="mt-12 max-w-[52rem] border-t border-hairline pt-6 text-[1rem] leading-[1.6] text-muted-ink"
+          className="mt-12 max-w-[54rem] border-t border-hairline pt-8 text-[1.28rem] leading-[1.4] font-extrabold tracking-[-0.02em] text-ink sm:text-[1.5rem]"
+        >
+          Put them together and the takeaway is simple: at today&rsquo;s spreads
+          you can&rsquo;t win on price &mdash;{" "}
+          <span className="accent">you win on speed and follow-up.</span>{" "}
+          That&rsquo;s the whole job of what we build.
+        </p>
+        <p
+          data-reveal
+          className="mt-5 max-w-[52rem] text-[0.95rem] leading-[1.6] text-muted-ink"
         >
           Every figure is published data and the source is named.{" "}
           <span className="font-semibold text-ink">Ask me for any of them.</span>

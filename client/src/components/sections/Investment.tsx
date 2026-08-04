@@ -44,12 +44,10 @@ export function Investment() {
           style={{ "--reveal-delay": "150ms" } as React.CSSProperties}
           className="mt-8 max-w-[60rem] text-[1.02rem] leading-[1.62] text-muted-ink"
         >
-          Media is never marked up and never runs through our account.{" "}
-          <strong className="font-bold text-ink">
-            There&rsquo;s no per-funded-loan fee
-          </strong>{" "}
-          &mdash; charging on closings would give you a reason to under-report
-          them, on the exact number this engagement is measured by.
+          Media is never marked up and never runs through our account &mdash; it
+          stays in an account you own. And there&rsquo;s{" "}
+          <strong className="font-bold text-ink">no per-funded-loan fee</strong>:
+          one flat price, whether you close two deals in a month or ten.
         </p>
       </div>
     </section>
