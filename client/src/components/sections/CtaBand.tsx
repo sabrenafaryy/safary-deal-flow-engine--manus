@@ -24,9 +24,9 @@ export function CtaBand() {
             {/* the offer restated as numerals — the page's conversion arithmetic */}
             <div className="flex flex-wrap items-end gap-x-8 gap-y-4 border-b border-white/12 pb-6">
               {[
-                ["6–12", "appointments a month"],
-                ["90", "day guarantee"],
+                ["6+", "appointments a month"],
                 ["5", "minute response"],
+                ["$0", "markup on media"],
               ].map(([n, l]) => (
                 <div key={l}>
                   <p className="numeral text-[2.5rem] leading-[0.9] text-brand sm:text-[2.9rem]">
@@ -42,8 +42,8 @@ export function CtaBand() {
               <span className="accent">works for you.</span>
             </h2>
             <CtaMicro onDark className="mt-4">
-              Thirty minutes. We&rsquo;ll run your deal size, your points and your
-              close rate.
+              Thirty minutes. Bring your close rate and your average deal size and
+              we&rsquo;ll run it together.
             </CtaMicro>
           </div>
           <div className="shrink-0">

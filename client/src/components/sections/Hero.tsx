@@ -37,7 +37,7 @@ export function Hero() {
           <div className="max-w-[46rem]">
             <div data-reveal>
               <Eyebrow onDark>
-                For lenders &amp; brokers placing 3+ loans a month
+                For private money &amp; investor lenders and brokers placing 3+ loans a month
               </Eyebrow>
             </div>
 
@@ -46,8 +46,8 @@ export function Hero() {
               style={{ "--reveal-delay": "70ms" } as React.CSSProperties}
               className="h-display mt-7 text-[clamp(2.1rem,5.4vw,3.75rem)] text-white"
             >
-              6&ndash;12 pre-qualified investor appointments a month.{" "}
-              <span className="accent">Or you don&rsquo;t pay.</span>
+              6+ pre-qualified investor appointments a month, booked with the deal details attached.{" "}
+              <span className="accent">Or we work that month free.</span>
             </h1>
 
             <p
@@ -55,10 +55,9 @@ export function Hero() {
               style={{ "--reveal-delay": "140ms" } as React.CSSProperties}
               className="mt-7 max-w-[38rem] text-[1.06rem] leading-[1.62] text-on-dark sm:text-[1.15rem]"
             >
-              We build borrower acquisition systems that deliver borrowers with a
-              property under contract and a close date &mdash; booked straight onto
-              your calendar, with the address, the purchase price and the ARV
-              already on the sheet.
+              Paid acquisition, funnel pages, five-minute response and booked
+              appointments &mdash; for private money and investor lenders, and the
+              brokers who place their loans.
             </p>
 
             {/* guarantee callout */}
@@ -72,9 +71,9 @@ export function Hero() {
                 strokeWidth={2}
               />
               <p className="text-[0.95rem] leading-[1.5] font-medium text-[#DCEBFA]">
-                If we don&rsquo;t deliver 6 in your first 90 days,{" "}
+                Six qualified appointments every month, starting month two.{" "}
                 <strong className="font-extrabold text-brand">
-                  we work free until we do &mdash; and refund your setup fee.
+                  Miss a month, we work that month free.
                 </strong>
               </p>
             </div>

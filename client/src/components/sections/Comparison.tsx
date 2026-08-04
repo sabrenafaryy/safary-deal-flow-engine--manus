@@ -50,7 +50,7 @@ const ROWS: Row[] = [
     criterion: "If the number misses",
     vendors: "Your problem",
     agencies: "Your problem",
-    safary: "We work free until we hit it, and refund your setup",
+    safary: "We work that month free. Miss twice and you can walk with your setup fee back.",
   },
 ];
 
@@ -64,6 +64,12 @@ export function Comparison() {
             Three ways to buy deal flow.{" "}
             <span className="accent">Only one of them is accountable.</span>
           </h2>
+          <p className="mt-6 text-[1.02rem] leading-[1.6] text-muted-ink">
+            Lead vendors sell you form fills. Agencies sell you campaigns.
+            Software sells you a tool you run yourself. And appointment setters
+            &mdash; the one thing that would actually solve this &mdash;
+            don&rsquo;t exist in private lending. So we built it.
+          </p>
         </div>
 
         {/* ---------- desktop: elevated-column table ---------- */}

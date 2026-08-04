@@ -47,8 +47,8 @@ const GROUPS: Group[] = [
         "Claimed, verified, fully built out: categories, services, markets, photos, Q&A and posts.",
       ],
       [
-        "Map Pack Positioning",
-        "The map sits above the paid results. Most lenders leave it empty. We fill it and feed it reviews.",
+        "Local Results Placement",
+        "Google shows three local businesses above the paid ads. Most lenders aren't one of them. We get you there and keep reviews coming in.",
       ],
     ],
   },
@@ -112,7 +112,7 @@ const GROUPS: Group[] = [
       ],
       [
         "Review Engine",
-        "Requests fire at funding. Reviews feed the map. The map feeds the ads.",
+        "Requests fire automatically at funding. More reviews, higher local ranking, cheaper leads.",
       ],
     ],
   },
@@ -237,32 +237,44 @@ export function Included() {
             <div className="mt-4 flex items-end gap-6 border-y border-brand/25 py-4">
               <div>
                 <p className="numeral text-[3.1rem] text-brand">6</p>
-                <p className="mono-label mt-1 text-muted-ink">appointments</p>
+                <p className="mono-label mt-1 text-muted-ink">every month</p>
               </div>
               <span
                 aria-hidden="true"
                 className="mb-6 h-8 w-px bg-brand/25"
               />
               <div>
-                <p className="numeral text-[3.1rem] text-ink">90</p>
-                <p className="mono-label mt-1 text-muted-ink">days</p>
+                <p className="numeral text-[3.1rem] text-ink">M2</p>
+                <p className="mono-label mt-1 text-muted-ink">guarantee begins</p>
               </div>
             </div>
             <p className="mt-4 text-[0.96rem] leading-[1.58] text-muted-ink">
-              Miss it and we work free until we hit it, and refund your setup fee.
+              Six pre-qualified appointments every month, starting month two.
+              Month one is build and ramp.{" "}
+              <strong className="font-bold text-ink">
+                Miss a month after that and we work that month free.
+              </strong>{" "}
+              After month six it becomes a performance standard &mdash; miss six
+              in a month and you can cancel with 30 days&rsquo; notice.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
-              A qualifying appointment: business purpose, non-owner-occupied, a
-              specific property with price and ARV, a target close date, stated
-              experience, above your loan minimum &mdash; plus any criteria of your
-              own we agree to add. That definition is written down and signed off
-              before we start, so there&rsquo;s never an argument about what
-              counted.
+              A qualifying appointment is defined in writing and signed off before
+              we start &mdash; business purpose, non-owner-occupied, a specific
+              property with price and ARV, a close date, stated experience, above
+              your loan minimum, booked and confirmed. Every one appears in your
+              monthly report with its outcome.
+            </p>
+            <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
+              <strong className="font-bold text-ink">What suspends it:</strong> a
+              bookable calendar with open slots, ad spend at the minimum,
+              prior-month funding reporting, and appointments attended within 24
+              hours. Two consecutive misses and either of us can walk &mdash;
+              setup fee back, and you keep every lead, record and ad account.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               We don&rsquo;t guarantee funded loans. We don&rsquo;t control your
-              underwriting, your pricing or your capital. We guarantee what we
-              control and we report the rest.
+              underwriting, your pricing or your capital. We guarantee the
+              appointment and we report the funding.
             </p>
           </div>
 
@@ -273,11 +285,11 @@ export function Included() {
           >
             <span className="mono-label text-brand">The Math</span>
             <p className="numeral mt-3 text-[2.6rem] text-ink">
-              $5,000<span className="text-[1rem] font-bold text-muted-ink">/mo</span>
+              6<span className="text-[1rem] font-bold text-muted-ink"> a month</span>
             </p>
             <p className="mt-2 text-[0.96rem] leading-[1.58] text-muted-ink">
-              in media produces roughly 6 to 12 appointments. At typical close
-              rates, one to three of those fund.
+              qualified appointments. At your close rate, that&rsquo;s your funded
+              deals.
             </p>
             <dl className="mt-4 space-y-3 border-t border-hairline pt-4">
               <div>
@@ -285,8 +297,7 @@ export function Included() {
                   If you fund it
                 </dt>
                 <dd className="text-[0.94rem] leading-[1.5] text-muted-ink">
-                  $12K to $20K per deal on a $400K bridge. Break-even lands around
-                  one deal a month.
+                  $12,000 to $20,000 per deal on a $400K bridge.
                 </dd>
               </div>
               <div>
@@ -294,12 +305,14 @@ export function Included() {
                   If you place it
                 </dt>
                 <dd className="text-[0.94rem] leading-[1.5] text-muted-ink">
-                  $4K to $8K on the same deal. Break-even lands around two.
+                  One to two points at close &mdash; so it turns on your average
+                  deal size.
                 </dd>
               </div>
             </dl>
             <p className="mt-4 text-[0.94rem] leading-[1.5] font-semibold text-ink">
-              On the call we run this with your numbers instead of mine.
+              Monthly cost is $5,000 plus your media. On the call we run this with
+              your close rate and your deal size &mdash; not an industry average.
             </p>
           </div>
         </div>

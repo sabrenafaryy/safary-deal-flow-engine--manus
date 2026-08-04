@@ -16,19 +16,19 @@ const QA: [string, string][] = [
   ],
   [
     "How fast will I see funded loans?",
-    "Appointments start in weeks one to four, mostly from reactivating your existing list. First fundings from cold traffic land in month two to three — underwriting and closing runs 30 to 60 days even for a borrower who's ready today. Month six looks materially better than month three.",
+    "Appointments start in month one, mostly from reactivating your existing list — that's why the guarantee starts month two rather than day one. First fundings from cold traffic land in month two to three, because underwriting and closing runs 30 to 60 days even for a borrower who's ready today. Month six looks materially better than month three.",
   ],
   [
     "What if an appointment isn't qualified?",
-    "The definition is agreed in writing before you sign, and every appointment shows up in your report with its outcome. If it doesn't meet the definition, it doesn't count toward the guarantee.",
+    "The definition is agreed in writing before we start, and every appointment shows up in your report with its outcome. If it doesn't meet the definition, it doesn't count toward the guarantee — and it doesn't count toward our volume tiers either.",
   ],
   [
     "Do you work with brokers or only lenders who fund?",
-    "Both, and hybrids. The guarantee is on appointments, and an appointment doesn't care whether you fund the deal or place it. The break-even math differs — we run yours on the call.",
+    "Both, and hybrids. The guarantee is on appointments, and an appointment doesn't care whether you fund the deal or place it. The economics differ though — a broker earns points at close, so this turns on average deal size rather than volume. We ask for that number on the call and tell you honestly whether it clears.",
   ],
   [
     "Who pays for the ads?",
-    "You do, directly, from an account in your name. Media never runs through my account and it's never marked up.",
+    "You do, directly, from an account in your name. Media never runs through my account and it's never marked up. There's also no per-funded-loan fee — charging you on closings would give you a reason to under-report them, on the exact number this engagement is measured by.",
   ],
   [
     "Do you work with my competitors?",
