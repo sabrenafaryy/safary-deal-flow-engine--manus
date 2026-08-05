@@ -18,27 +18,31 @@ const STATS: Stat[] = [
   {
     value: "83",
     unit: "%",
-    label: "of private lenders made loans to fewer than 10 borrowers in four years",
-    source: "Forecasa, via Urban Institute · Apr 2026",
+    label:
+      "of private lenders made loans to fewer than 10 unique borrowers over four years",
+    source:
+      "Forecasa data, cited in The Evolution of Residential Transition Lending — Urban Institute, April 2026",
   },
   {
-    value: "26",
+    value: "9",
     unit: "%",
     label:
-      "of casual borrowers — 91% of the market — were still active a year later",
-    source: "Urban Institute · Apr 2026",
+      "of borrowers do four or more loans a year — and drive more than 40% of the $90.5B in volume",
+    source: "Urban Institute, April 2026",
   },
   {
     value: "60",
     unit: "%",
     label: "of lenders never returned a phone call within 24 hours",
-    source: "130-lender speed-to-lead study, NMP",
+    source:
+      "LeadQual, 350+ leads to 130+ lenders — National Mortgage Professional, January 2010",
   },
   {
     value: "306",
     unit: "bps",
     label: "DSCR spread over the 10-year — down from 424 a year earlier",
-    source: "Lightning Docs / AAPL · Apr 2025",
+    source:
+      "Lightning Docs platform data, official loan documents provider to the American Association of Private Lenders — April 2025",
   },
 ];
 
@@ -84,32 +88,12 @@ export function IndustryData() {
           ))}
         </div>
 
-        {/* keystone figure — the one that makes the other four mean something */}
         <div
           data-reveal
-          className="mt-12 grid gap-6 rounded-2xl border-2 border-brand/35 bg-brand/6 p-8 sm:grid-cols-[auto_minmax(0,1fr)] sm:items-center sm:gap-10 sm:p-10"
-        >
-          <p className="numeral flex items-baseline text-brand">
-            <span className="text-[4.4rem] leading-[0.85] sm:text-[5.6rem]">9</span>
-            <span className="ml-1 text-[1.5rem] font-extrabold">%</span>
-          </p>
-          <div>
-            <p className="text-[1.08rem] leading-[1.5] font-bold text-ink sm:text-[1.15rem]">
-              of borrowers do four or more loans a year &mdash; and drive more than
-              40% of the $90.5 billion in volume.
-            </p>
-            <p className="mono-label mt-3 text-muted-ink normal-case">
-              Urban Institute &middot; Apr 2026
-            </p>
-          </div>
-        </div>
-
-        <div
-          data-reveal
-          className="mt-10 max-w-[54rem] space-y-5 border-t border-hairline pt-8"
+          className="mt-12 max-w-[54rem] space-y-5 border-t border-hairline pt-8"
         >
           <p className="text-[1.22rem] leading-[1.4] font-extrabold tracking-[-0.02em] text-ink sm:text-[1.48rem]">
-            Read the first two together: fewer than ten borrowers in four years
+            Read the first two together. Fewer than ten borrowers in four years
             &mdash; in a market where a single active investor can do four or more
             deals a year on their own. The size of your book was never the number of
             loans you wrote.{" "}
