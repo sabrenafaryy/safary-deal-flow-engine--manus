@@ -199,18 +199,12 @@ export function Included() {
               monthly report with its outcome.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
-              <strong className="font-bold text-ink">Nothing up front.</strong> The
-              ads, funnel pages, tracking, response layer and reporting are all
-              built before month one and included &mdash; you&rsquo;re not paying
-              for a build and then waiting to find out whether it works.
-            </p>
-            <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               <strong className="font-bold text-ink">What suspends it:</strong> a
               bookable calendar with open slots, ad spend at the minimum,
               prior-month funding reporting, and appointments attended within 24
               hours. Two consecutive misses and either of us can walk &mdash;
-              you&rsquo;ve paid us nothing for either month, and you keep every
-              lead, record and ad account.
+              you&rsquo;ve paid no fee for either month, and you keep every lead,
+              record and ad account.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               We don&rsquo;t guarantee funded loans. We don&rsquo;t control your
