@@ -49,8 +49,8 @@ const ROWS: Row[] = [
   {
     criterion: "Cost to start",
     vendors: "Per lead, up front",
-    agencies: "Setup or build fee",
-    safary: "Nothing. No setup fee.",
+    agencies: "An up-front build fee",
+    safary: "Nothing up front.",
   },
   {
     criterion: "If the number misses",

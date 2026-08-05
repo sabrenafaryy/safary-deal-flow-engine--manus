@@ -199,11 +199,10 @@ export function Included() {
               monthly report with its outcome.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
-              <strong className="font-bold text-ink">Nothing up front.</strong> No
-              setup fee and no build fee. The ads, funnel pages, tracking, response
-              layer and reporting are built before month one and included &mdash;
-              you don&rsquo;t pay for a build and then wait to find out whether it
-              works.
+              <strong className="font-bold text-ink">Nothing up front.</strong> The
+              ads, funnel pages, tracking, response layer and reporting are all
+              built before month one and included &mdash; you&rsquo;re not paying
+              for a build and then waiting to find out whether it works.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               <strong className="font-bold text-ink">What suspends it:</strong> a
