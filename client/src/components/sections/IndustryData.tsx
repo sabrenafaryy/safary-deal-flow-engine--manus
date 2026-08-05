@@ -16,33 +16,33 @@ type Stat = {
 
 const STATS: Stat[] = [
   {
+    value: "9",
+    unit: "%",
+    label:
+      "of borrowers do four or more loans a year, and drive more than 40% of $90.5 billion in volume",
+    source: "Urban Institute, April 2026",
+  },
+  {
     value: "83",
     unit: "%",
     label:
       "of private lenders made loans to fewer than 10 unique borrowers over four years",
     source:
-      "Forecasa data, cited in The Evolution of Residential Transition Lending — Urban Institute, April 2026",
-  },
-  {
-    value: "9",
-    unit: "%",
-    label:
-      "of borrowers do four or more loans a year — and drive more than 40% of the $90.5B in volume",
-    source: "Urban Institute, April 2026",
+      "Forecasa data, cited in The Evolution of Residential Transition Lending, Urban Institute, April 2026",
   },
   {
     value: "60",
     unit: "%",
     label: "of lenders never returned a phone call within 24 hours",
     source:
-      "LeadQual, 350+ leads to 130+ lenders — National Mortgage Professional, January 2010",
+      "LeadQual, 350+ leads to 130+ lenders · National Mortgage Professional, January 2010",
   },
   {
     value: "306",
     unit: "bps",
-    label: "DSCR spread over the 10-year — down from 424 a year earlier",
+    label: "DSCR spread over the 10-year, down from 424 a year earlier",
     source:
-      "Lightning Docs platform data, official loan documents provider to the American Association of Private Lenders — April 2025",
+      "Lightning Docs platform data, official loan documents provider to the American Association of Private Lenders, April 2025",
   },
 ];
 
@@ -51,9 +51,9 @@ export function IndustryData() {
     <section className="relative border-y border-hairline bg-white py-20 sm:py-28">
       <div className="container">
         <div data-reveal className="max-w-[44rem]">
-          <SectionLabel index="08">The numbers</SectionLabel>
+          <SectionLabel index="08">Don&rsquo;t take my word for it</SectionLabel>
           <h2 className="h-section mt-5 text-ink">
-            Don&rsquo;t take <span className="accent">my word for it</span>
+            The <span className="accent">industry data.</span>
           </h2>
         </div>
 
@@ -92,22 +92,27 @@ export function IndustryData() {
           data-reveal
           className="mt-12 max-w-[54rem] space-y-5 border-t border-hairline pt-8"
         >
-          <p className="text-[1.22rem] leading-[1.4] font-extrabold tracking-[-0.02em] text-ink sm:text-[1.48rem]">
-            Read the first two together. Fewer than ten borrowers in four years
-            &mdash; in a market where a single active investor can do four or more
-            deals a year on their own. The size of your book was never the number of
-            loans you wrote.{" "}
-            <span className="accent">
-              It&rsquo;s the number of investors who know your name.
-            </span>{" "}
-            That&rsquo;s the number ads move.
+          <p className="text-[1.2rem] leading-[1.42] font-extrabold tracking-[-0.02em] text-ink sm:text-[1.42rem]">
+            The money in this market is concentrated. A small group of investors
+            borrows again and again, and they drive{" "}
+            <span className="accent">close to half the volume</span> in a $90 billion
+            market. Nobody can tell which borrower is one of them until the third
+            loan.
           </p>
           <p className="text-[1.02rem] leading-[1.6] text-muted-ink">
-            And the last two say why you can&rsquo;t get there the old way: at
-            today&rsquo;s spreads you can&rsquo;t buy your way in on price, and the
-            lender who answers first takes the deal.{" "}
-            <span className="font-bold text-ink">So you win on reach and speed.</span>{" "}
-            That&rsquo;s the whole job of what we build.
+            So the only way to get them is to be in front of all of them. Almost no
+            lender is. And the ones who do get the call mostly don&rsquo;t answer it.
+          </p>
+          <p className="text-[1.02rem] leading-[1.6] text-muted-ink">
+            That was survivable when you could win on price. At today&rsquo;s spreads
+            you can&rsquo;t.{" "}
+            <span className="font-bold text-ink">
+              Reach and speed are what&rsquo;s left
+            </span>{" "}
+            &mdash; and both of them can be bought.{" "}
+            <span className="font-bold text-ink">
+              That&rsquo;s the whole job of what we build.
+            </span>
           </p>
         </div>
 
