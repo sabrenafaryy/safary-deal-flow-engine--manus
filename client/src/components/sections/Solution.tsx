@@ -45,6 +45,26 @@ export function Solution() {
               already on the sheet.
             </p>
 
+            <p className="text-[1.12rem] leading-[1.58] text-on-dark sm:text-[1.2rem]">
+              And you&rsquo;re not buying a loan.{" "}
+              <span className="accent">You&rsquo;re buying a borrower.</span>
+            </p>
+
+            <p className="text-[1.02rem] leading-[1.62] text-on-dark">
+              An investor who flips one house flips the next one, and the one after
+              that.{" "}
+              <span className="font-bold text-white">
+                The 9% who do four or more deals a year drive more than 40% of the
+                volume in this market
+              </span>{" "}
+              &mdash; and you can&rsquo;t tell which one is sitting in your inbox on
+              a Tuesday afternoon. That&rsquo;s the whole argument for consistent
+              flow at the top.
+            </p>
+            <p className="mono-label text-on-dark-muted">
+              Urban Institute &middot; Apr 2026
+            </p>
+
             <p className="text-[1.02rem] leading-[1.6] text-on-dark-muted">
               Most agencies stop at the click and call it a campaign. We
               don&rsquo;t stop until it&rsquo;s an appointment &mdash; which is why

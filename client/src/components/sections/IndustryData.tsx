@@ -84,18 +84,52 @@ export function IndustryData() {
           ))}
         </div>
 
-        <p
+        {/* keystone figure — the one that makes the other four mean something */}
+        <div
           data-reveal
-          className="mt-12 max-w-[54rem] border-t border-hairline pt-8 text-[1.28rem] leading-[1.4] font-extrabold tracking-[-0.02em] text-ink sm:text-[1.5rem]"
+          className="mt-12 grid gap-6 rounded-2xl border-2 border-brand/35 bg-brand/6 p-8 sm:grid-cols-[auto_minmax(0,1fr)] sm:items-center sm:gap-10 sm:p-10"
         >
-          Put them together and the takeaway is simple: at today&rsquo;s spreads
-          you can&rsquo;t win on price &mdash;{" "}
-          <span className="accent">you win on speed and follow-up.</span>{" "}
-          That&rsquo;s the whole job of what we build.
-        </p>
+          <p className="numeral flex items-baseline text-brand">
+            <span className="text-[4.4rem] leading-[0.85] sm:text-[5.6rem]">9</span>
+            <span className="ml-1 text-[1.5rem] font-extrabold">%</span>
+          </p>
+          <div>
+            <p className="text-[1.08rem] leading-[1.5] font-bold text-ink sm:text-[1.15rem]">
+              of borrowers do four or more loans a year &mdash; and drive more than
+              40% of the $90.5 billion in volume.
+            </p>
+            <p className="mono-label mt-3 text-muted-ink normal-case">
+              Urban Institute &middot; Apr 2026
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-reveal
+          className="mt-10 max-w-[54rem] space-y-5 border-t border-hairline pt-8"
+        >
+          <p className="text-[1.22rem] leading-[1.4] font-extrabold tracking-[-0.02em] text-ink sm:text-[1.48rem]">
+            Read the first two together: fewer than ten borrowers in four years
+            &mdash; in a market where a single active investor can do four or more
+            deals a year on their own. The size of your book was never the number of
+            loans you wrote.{" "}
+            <span className="accent">
+              It&rsquo;s the number of investors who know your name.
+            </span>{" "}
+            That&rsquo;s the number ads move.
+          </p>
+          <p className="text-[1.02rem] leading-[1.6] text-muted-ink">
+            And the last two say why you can&rsquo;t get there the old way: at
+            today&rsquo;s spreads you can&rsquo;t buy your way in on price, and the
+            lender who answers first takes the deal.{" "}
+            <span className="font-bold text-ink">So you win on reach and speed.</span>{" "}
+            That&rsquo;s the whole job of what we build.
+          </p>
+        </div>
+
         <p
           data-reveal
-          className="mt-5 max-w-[52rem] text-[0.95rem] leading-[1.6] text-muted-ink"
+          className="mt-6 max-w-[52rem] text-[0.95rem] leading-[1.6] text-muted-ink"
         >
           Every figure is published research and the source is named.{" "}
           <span className="font-semibold text-ink">
