@@ -47,10 +47,16 @@ const ROWS: Row[] = [
     safary: "Worked. Reactivated now, refinanced at seasoning.",
   },
   {
+    criterion: "Cost to start",
+    vendors: "Per lead, up front",
+    agencies: "Setup or build fee",
+    safary: "Nothing. No setup fee.",
+  },
+  {
     criterion: "If the number misses",
     vendors: "Your problem",
     agencies: "Your problem",
-    safary: "We work that month free. Miss twice and you can walk with your setup fee back.",
+    safary: "You don't pay our fee that month. Miss twice and you can walk.",
   },
 ];
 

@@ -185,10 +185,11 @@ export function Included() {
               Five pre-qualified appointments every month, starting month two.
               Month one is build and ramp.{" "}
               <strong className="font-bold text-ink">
-                Miss a month after that and we work that month free.
+                Miss a month after that and you don&rsquo;t pay our fee that month
               </strong>{" "}
-              After month six it becomes a performance standard &mdash; miss five
-              in a month and you can cancel with 30 days&rsquo; notice.
+              &mdash; refunded if you&rsquo;ve already paid it. After month six it
+              becomes a performance standard &mdash; miss five in a month and you
+              can cancel with 30 days&rsquo; notice.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               A qualifying appointment is defined in writing and signed off before
@@ -198,11 +199,19 @@ export function Included() {
               monthly report with its outcome.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
+              <strong className="font-bold text-ink">Nothing up front.</strong> No
+              setup fee and no build fee. The ads, funnel pages, tracking, response
+              layer and reporting are built before month one and included &mdash;
+              you don&rsquo;t pay for a build and then wait to find out whether it
+              works.
+            </p>
+            <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               <strong className="font-bold text-ink">What suspends it:</strong> a
               bookable calendar with open slots, ad spend at the minimum,
               prior-month funding reporting, and appointments attended within 24
               hours. Two consecutive misses and either of us can walk &mdash;
-              setup fee back, and you keep every lead, record and ad account.
+              you&rsquo;ve paid us nothing for either month, and you keep every
+              lead, record and ad account.
             </p>
             <p className="mt-3 text-[0.9rem] leading-[1.55] text-muted-ink">
               We don&rsquo;t guarantee funded loans. We don&rsquo;t control your

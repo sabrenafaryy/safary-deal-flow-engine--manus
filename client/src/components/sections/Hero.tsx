@@ -39,7 +39,7 @@ export function Hero() {
               className="h-display mt-7 text-[clamp(2.1rem,5.4vw,3.75rem)] text-white"
             >
               5+ pre-qualified investor appointments a month, booked with the deal details attached.{" "}
-              <span className="accent">Or we work that month free.</span>
+              <span className="accent">Or you don&rsquo;t pay our fee.</span>
             </h1>
 
             <p
@@ -65,7 +65,7 @@ export function Hero() {
               <p className="text-[0.95rem] leading-[1.5] font-medium text-[#DCEBFA]">
                 Five qualified appointments every month, starting month two.{" "}
                 <strong className="font-extrabold text-brand">
-                  Miss a month, we work that month free.
+                  Miss a month, you don&rsquo;t pay our fee that month.
                 </strong>
               </p>
             </div>
